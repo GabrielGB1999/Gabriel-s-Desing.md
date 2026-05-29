@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="794" height="1123" viewBox="0 0 794 1123">
+
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&amp;family=Share+Tech+Mono&amp;family=Space+Grotesk:wght@300;400;600&amp;display=swap');
+    </style>
+
+    <!-- ── Gradients ── -->
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#C084FC"/>
+      <stop offset="45%"  stop-color="#F5F0FF"/>
+      <stop offset="100%" stop-color="#22D3EE"/>
+    </linearGradient>
+
+    <linearGradient id="iridescent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#C084FC" stop-opacity="0.85"/>
+      <stop offset="25%"  stop-color="#22D3EE" stop-opacity="0.85"/>
+      <stop offset="55%"  stop-color="#F472B6" stop-opacity="0.85"/>
+      <stop offset="80%"  stop-color="#A3E635" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#C084FC" stop-opacity="0.85"/>
+    </linearGradient>
+
+    <linearGradient id="iridescentFade" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#22D3EE" stop-opacity="0.6"/>
+      <stop offset="50%"  stop-color="#C084FC" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#F472B6" stop-opacity="0.6"/>
+    </linearGradient>
+
+    <radialGradient id="orbBg" cx="50%" cy="42%" r="55%">
+      <stop offset="0%"   stop-color="#2C1268"/>
+      <stop offset="55%"  stop-color="#150830"/>
+      <stop offset="100%" stop-color="#0B0B1A"/>
+    </radialGradient>
+
+    <radialGradient id="outerGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#C084FC" stop-opacity="0.35"/>
+      <stop offset="50%"  stop-color="#C084FC" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#C084FC" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="specBarGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#1E0A42"/>
+      <stop offset="100%" stop-color="#0E0720"/>
+    </linearGradient>
+
+    <!-- ── Filters ── -->
+    <filter id="titleGlow" x="-15%" y="-80%" width="130%" height="260%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="18" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="btnGlow" x="-20%" y="-60%" width="140%" height="220%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- ── Patterns ── -->
+    <pattern id="checker" width="16" height="16" patternUnits="userSpaceOnUse">
+      <rect width="16" height="16" fill="#EDE8FF"/>
+      <rect width="8"  height="8"  fill="#0B0B1A"/>
+      <rect x="8" y="8" width="8" height="8" fill="#0B0B1A"/>
+    </pattern>
+
+    <pattern id="scanlines" width="2" height="4" patternUnits="userSpaceOnUse">
+      <rect width="2" height="1" fill="#C084FC" fill-opacity="0.035"/>
+    </pattern>
+
+    <!-- ── Clip paths ── -->
+    <clipPath id="page">
+      <rect width="794" height="1123"/>
+    </clipPath>
+
+    <clipPath id="orbClip">
+      <circle cx="397" cy="455" r="136"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#page)">
+
+    <!-- BACKGROUND -->
+    <rect width="794" height="1123" fill="#0B0B1A"/>
+    <rect width="794" height="1123" fill="url(#scanlines)"/>
+    <ellipse cx="397" cy="190" rx="380" ry="220" fill="#C084FC" fill-opacity="0.055"/>
+    <ellipse cx="397" cy="455" rx="260" ry="260" fill="#C084FC" fill-opacity="0.04"/>
+    <ellipse cx="397" cy="880" rx="320" ry="180" fill="#22D3EE" fill-opacity="0.04"/>
+
+    <!-- PERSPECTIVE GRID -->
+    <g stroke="#C084FC" stroke-width="0.5" opacity="0.11">
+      <line x1="397" y1="455" x2="0"   y2="720"/>
+      <line x1="397" y1="455" x2="0"   y2="840"/>
+      <line x1="397" y1="455" x2="0"   y2="960"/>
+      <line x1="397" y1="455" x2="0"   y2="1080"/>
+      <line x1="397" y1="455" x2="160" y2="1123"/>
+      <line x1="397" y1="455" x2="794" y2="720"/>
+      <line x1="397" y1="455" x2="794" y2="840"/>
+      <line x1="397" y1="455" x2="794" y2="960"/>
+      <line x1="397" y1="455" x2="794" y2="1080"/>
+      <line x1="397" y1="455" x2="634" y2="1123"/>
+      <line x1="0" y1="680"  x2="794" y2="680"/>
+      <line x1="0" y1="780"  x2="794" y2="780"/>
+      <line x1="0" y1="880"  x2="794" y2="880"/>
+      <line x1="0" y1="980"  x2="794" y2="980"/>
+      <line x1="0" y1="1060" x2="794" y2="1060"/>
+    </g>
+
+    <!-- TOP BAND -->
+    <rect y="0"  width="794" height="18" fill="url(#checker)" opacity="0.65"/>
+    <rect y="18" width="794" height="50" fill="#100A22"/>
+    <rect y="67" width="794" height="1.5" fill="url(#iridescent)"/>
+    <text x="40" y="49" font-family="'Share Tech Mono','Courier New',monospace" font-size="10.5" fill="#B8BCC8" letter-spacing="2.5">ANTHROPIC_SYSTEMS // CLAUDE A1 // MODEL YEAR 2003 // BUILD 0001</text>
+    <circle cx="712" cy="43" r="5" fill="#A3E635" opacity="0.9"/>
+    <circle cx="728" cy="43" r="5" fill="#22D3EE" opacity="0.9"/>
+    <circle cx="744" cy="43" r="5" fill="#C084FC" opacity="0.9"/>
+
+    <!-- INTRODUCING LABEL -->
+    <text x="397" y="108" text-anchor="middle" font-family="'Share Tech Mono','Courier New',monospace" font-size="11" fill="#22D3EE" letter-spacing="9" opacity="0.9">//  INTRODUCING  //</text>
+
+    <!-- MAIN TITLE CLAUDE -->
+    <text x="399" y="213" text-anchor="middle" font-family="'Orbitron','Arial Black',sans-serif" font-size="150" font-weight="900" fill="#22D3EE" opacity="0.18" letter-spacing="-4">CLAUDE</text>
+    <text x="395" y="211" text-anchor="middle" font-family="'Orbitron','Arial Black',sans-serif" font-size="150" font-weight="900" fill="#F472B6" opacity="0.18" letter-spacing="-4">CLAUDE</text>
+    <text x="397" y="212" text-anchor="middle" font-family="'Orbitron','Arial Black',sans-serif" font-size="150" font-weight="900" fill="#C084FC" filter="url(#titleGlow)" opacity="0.45" letter-spacing="-4">CLAUDE</text>
+    <text x="397" y="212" text-anchor="middle" font-family="'Orbitron','Arial Black',sans-serif" font-size="150" font-weight="900" fill="url(#titleGrad)" letter-spacing="-4">CLAUDE</text>
+    <line x1="68" y1="228" x2="726" y2="228" stroke="url(#iridescent)" stroke-width="1.25"/>
+    <text x="397" y="258" text-anchor="middle" font-family="'Orbitron','Arial Black',sans-serif" font-size="13" font-weight="400" fill="#B8BCC8" letter-spacing="7">ARTIFICIAL  INTELLIGENCE  SYSTEM</text>
+
+    <!-- CENTRAL HOLOGRAPHIC ORB -->
+    <circle cx="397" cy="455" r="270" fill="url(#outerGlow)"/>
+    <circle cx="397" cy="455" r="208" fill="none" stroke="url(#iridescent)" stroke-width="0.75" opacity="0.35"/>
+    <circle cx="397" cy="455" r="188" fill="none" stroke="#C084FC" stroke-width="0.5" opacity="0.25"/>
+    <circle cx="397" cy="455" r="165" fill="none" stroke="#22D3EE" stroke-width="0.5" opacity="0.30"/>
+    <circle cx="397" cy="455" r="144" fill="url(#orbBg)"/>
+    <circle cx="397" cy="455" r="144" fill="none" stroke="url(#iridescent)" stroke-width="2.5"/>
+    <circle cx="397" cy="455" r="142" fill="none" stroke="#C084FC" stroke-width="6" opacity="0.18"/>
+    <g clip-path="url(#orbClip)" stroke="#C084FC" stroke-width="0.5" opacity="0.18">
+      <line x1="261" y1="395" x2="533" y2="395"/>
+      <line x1="261" y1="420" x2="533" y2="420"/>
+      <line x1="261" y1="445" x2="533" y2="445"/>
+      <line x1="261" y1="470" x2="533" y2="470"/>
+      <line x1="261" y1="495" x2="533" y2="495"/>
+      <line x1="261" y1="520" x2="533" y2="520"/>
+      <line x1="337" y1="319" x2="337" y2="591"/>
+      <line x1="367" y1="319" x2="367" y2="591"/>
+      <line x1="397" y1="319" x2="397" y2="591"/>
+      <line x1="427" y1="319" x2="427" y2="591"/>
+      <line x1="457" y1="319" x2="457" y2="591"/>
+    </g>
+    <polygon points="397,327 517,455 397,583 277,455" fill="none" stroke="url(#iridescentFade)" stroke-width="1.5" opacity="0.65"/>
+    <polygon points="397,369 455,455 397,541 339,455" fill="none" stroke="#22D3EE" stroke-width="1" opacity="0.5"/>
+    <line x1="253" y1="455" x2="541" y2="455" stroke="#C084FC" stroke-width="0.75" opacity="0.28"/>
+    <line x1="397" y1="311" x2="397" y2="599" stroke="#C084FC" stroke-width="0.75" opacity="0.28"/>
+    <line x1="295" y1="353" x2="499" y2="557" stroke="#22D3EE" stroke-width="0.5" opacity="0.2"/>
+    <line x1="499" y1="353" x2="295" y2="557" stroke="#22D3EE" stroke-width="0.5" opacity="0.2"/>
+    <circle cx="397" cy="455" r="38" fill="#C084FC" fill-opacity="0.12"/>
+    <circle cx="397" cy="455" r="18" fill="#C084FC" fill-opacity="0.35" filter="url(#softGlow)"/>
+    <circle cx="397" cy="455" r="6"  fill="#F5F0FF" fill-opacity="0.95"/>
+    <circle cx="397" cy="313" r="6" fill="#22D3EE" opacity="0.9" filter="url(#softGlow)"/>
+    <circle cx="539" cy="455" r="6" fill="#F472B6" opacity="0.9" filter="url(#softGlow)"/>
+    <circle cx="397" cy="597" r="6" fill="#C084FC" opacity="0.9" filter="url(#softGlow)"/>
+    <circle cx="255" cy="455" r="6" fill="#A3E635" opacity="0.9" filter="url(#softGlow)"/>
+    <circle cx="499" cy="355" r="3.5" fill="#22D3EE" opacity="0.7"/>
+    <circle cx="499" cy="555" r="3.5" fill="#C084FC" opacity="0.7"/>
+    <circle cx="295" cy="355" r="3.5" fill="#F472B6" opacity="0.7"/>
+    <circle cx="295" cy="555" r="3.5" fill="#22D3EE" opacity="0.7"/>
+    <path d="M 397 269 A 206 206 0 0 1 591 455" fill="none" stroke="#22D3EE" stroke-width="1.5" opacity="0.38"/>
+    <path d="M 203 455 A 206 206 0 0 1 397 641" fill="none" stroke="#F472B6" stroke-width="1.5" opacity="0.38"/>
+    <g stroke="#B8BCC8" stroke-width="1" opacity="0.38">
+      <line x1="397" y1="249" x2="397" y2="265"/>
+      <line x1="475" y1="267" x2="468" y2="280"/>
+      <line x1="535" y1="323" x2="525" y2="333"/>
+      <line x1="599" y1="385" x2="585" y2="389"/>
+      <line x1="603" y1="455" x2="587" y2="455"/>
+      <line x1="599" y1="525" x2="585" y2="521"/>
+      <line x1="397" y1="661" x2="397" y2="645"/>
+      <line x1="319" y1="643" x2="326" y2="630"/>
+      <line x1="195" y1="385" x2="209" y2="389"/>
+      <line x1="191" y1="455" x2="207" y2="455"/>
+      <line x1="195" y1="525" x2="209" y2="521"/>
+    </g>
+
+    <!-- LEFT READOUT PANEL -->
+    <rect x="44" y="372" width="158" height="96" rx="4" fill="#130926" fill-opacity="0.92" stroke="#C084FC" stroke-width="0.75" stroke-opacity="0.45"/>
+    <rect x="44" y="372" width="3" height="96" rx="2" fill="#C084FC" opacity="0.7"/>
+    <text x="56" y="391" font-family="'Share Tech Mono','Courier New',monospace" font-size="8.5" fill="#22D3EE" letter-spacing="1.5">SYS.STATUS</text>
+    <line x1="56" y1="397" x2="194" y2="397" stroke="#C084FC" stroke-width="0.5" opacity="0.35"/>
+    <text x="56" y="412" font-family="'Share Tech Mono','Courier New',monospace" font-size="9" fill="#A3E635">ONLINE  ████████████</text>
+    <text x="56" y="428" font-family="'Share Tech Mono','Courier New',monospace" font-size="9" fill="#B8BCC8">CORE  →  ACTIVE</text>
+    <text x="56" y="443" font-family="'Share Tech Mono','Courier New',monospace" font-size="9" fill="#B8BCC8">LANG  →  47 LANGS</text>
+    <text x="56" y="459" font-family="'Share Tech Mono','Courier New',monospace" font-size="9" fill="#B8BCC8">SAFE  →  ENABLED</text>
+
+    <!-- RIGHT READOUT PANEL -->
+    <rect x="592" y="372" width="158" height="96" rx="4" fill="#071826" fill-opacity="0.92" stroke="#22D3EE" stroke-width="0.75" stroke-opacity="0.45"/>
+    <rect x="747" y="372" width="3" height="96" rx="2" fill="#22D3EE" opacity="0.7"/>
+    <text x="604" y="391" font-family="'Share Tech Mono','Courier New',monospace" font-size="8.5" fill="#F472B6" letter-spacing="1.5">NEURAL.NET</text>
+    <line x1="604" y1="397" x2="742" y2="397" stroke="#22D3EE" stroke-width="0.5" opacity="0.35"/>
+    <text x="604" y="412" font-family="'Share Tech Mono','Courier New',monospace" font-size="9" fill="#B8BCC8">PARAMS → 52 BILLION</text>
+    <text x="604" y="428" font-family="'Share Tech Mono','Courier New',monospace" font-size="9" fill="#B8BCC8">CTX   → 100K TOKENS</text>
+    <text x="604" y="443" font-family="'Share Tech Mono','Courier New',monospace" font-size="9" fill="#B8BCC8">SPEED → 0.3 SEC/RESP</text>
+    <text x="604" y="459" font-family="'Share Tech Mono','Courier New',monospace" font-size="9" fill="#22D3EE">SAFE  ████████████</text>
+
+    <!-- TAGLINE -->
+    <line x1="68" y1="646" x2="726" y2="646" stroke="#1A1040" stroke-width="1"/>
+    <line x1="68" y1="648" x2="726" y2="648" stroke="url(#iridescentFade)" stroke-width="0.75" opacity="0.55"/>
+    <text x="397" y="684" text-anchor="middle" font-family="'Orbitron','Arial Black',sans-serif" font-size="15.5" font-weight="700" fill="#F5F0FF" letter-spacing="3.5">THE INTELLIGENCE OF TOMORROW</text>
+    <text x="397" y="710" text-anchor="middle" font-family="'Orbitron','Arial Black',sans-serif" font-size="15.5" font-weight="700" fill="#C084FC" letter-spacing="3.5" filter="url(#softGlow)">AVAILABLE TODAY</text>
+
+    <!-- SPEC ROWS -->
+    <rect x="44" y="732" width="706" height="38" rx="2" fill="url(#specBarGrad1)" stroke="#C084FC" stroke-width="0.5" stroke-opacity="0.28"/>
+    <rect x="44" y="732" width="3.5" height="38" fill="#C084FC"/>
+    <text x="62" y="757" font-family="'Share Tech Mono','Courier New',monospace" font-size="11" fill="#B8BCC8" letter-spacing="1">NATURAL LANGUAGE UNDERSTANDING</text>
+    <text x="526" y="757" font-family="'Share Tech Mono','Courier New',monospace" font-size="11" fill="#A3E635" letter-spacing="0.8">NEXT GENERATION  ▸▸</text>
+
+    <rect x="44" y="774" width="706" height="38" rx="2" fill="#0C0620" stroke="#22D3EE" stroke-width="0.5" stroke-opacity="0.28"/>
+    <rect x="44" y="774" width="3.5" height="38" fill="#22D3EE"/>
+    <text x="62" y="799" font-family="'Share Tech Mono','Courier New',monospace" font-size="11" fill="#B8BCC8" letter-spacing="1">CONTEXT WINDOW</text>
+    <text x="526" y="799" font-family="'Share Tech Mono','Courier New',monospace" font-size="11" fill="#22D3EE" letter-spacing="0.8">100 000 TOKENS  ▸▸</text>
+
+    <rect x="44" y="816" width="706" height="38" rx="2" fill="url(#specBarGrad1)" stroke="#F472B6" stroke-width="0.5" stroke-opacity="0.28"/>
+    <rect x="44" y="816" width="3.5" height="38" fill="#F472B6"/>
+    <text x="62" y="841" font-family="'Share Tech Mono','Courier New',monospace" font-size="11" fill="#B8BCC8" letter-spacing="1">SAFETY ALIGNMENT PROTOCOLS</text>
+    <text x="526" y="841" font-family="'Share Tech Mono','Courier New',monospace" font-size="11" fill="#F472B6" letter-spacing="0.8">FULLY ENABLED  ▸▸</text>
+
+    <rect x="44" y="858" width="706" height="38" rx="2" fill="#0C0620" stroke="#C084FC" stroke-width="0.5" stroke-opacity="0.28"/>
+    <rect x="44" y="858" width="3.5" height="38" fill="#C084FC" fill-opacity="0.55"/>
+    <text x="62" y="883" font-family="'Share Tech Mono','Courier New',monospace" font-size="11" fill="#B8BCC8" letter-spacing="1">MULTIMODAL REASONING ENGINE</text>
+    <text x="526" y="883" font-family="'Share Tech Mono','Courier New',monospace" font-size="11" fill="#C084FC" letter-spacing="0.8">VERSION 1.0  ▸▸</text>
+
+    <!-- CTA BUTTON -->
+    <line x1="44" y1="924" x2="750" y2="924" stroke="#1A1040" stroke-width="1"/>
+    <rect x="237" y="944" width="320" height="56" rx="28" fill="#C084FC" opacity="0.22" filter="url(#btnGlow)"/>
+    <rect x="237" y="944" width="320" height="56" rx="28" fill="#C084FC"/>
+    <rect x="239" y="946" width="316" height="26" rx="26" fill="#F5F0FF" fill-opacity="0.12"/>
+    <text x="397" y="979" text-anchor="middle" font-family="'Orbitron','Arial Black',sans-serif" font-size="13.5" font-weight="700" fill="#0B0B1A" letter-spacing="4">ACCESS NOW  →</text>
+    <text x="397" y="1022" text-anchor="middle" font-family="'Share Tech Mono','Courier New',monospace" font-size="11" fill="#B8BCC8" letter-spacing="2.5">ANTHROPIC.COM  //  CLAUDE-AI.NET</text>
+
+    <!-- BOTTOM BAND -->
+    <line x1="0" y1="1046" x2="794" y2="1046" stroke="url(#iridescent)" stroke-width="1" opacity="0.4"/>
+    <rect y="1047" width="794" height="58" fill="#0D0618"/>
+    <text x="44" y="1068" font-family="'Share Tech Mono','Courier New',monospace" font-size="8.5" fill="#5A5D70" letter-spacing="0.8">© 2003 ANTHROPIC CORP. ALL RIGHTS RESERVED. CLAUDE v1.0 // MODEL A1-EDITION.</text>
+    <text x="44" y="1086" font-family="'Share Tech Mono','Courier New',monospace" font-size="8.5" fill="#5A5D70" letter-spacing="0.8">FOR GENERAL USE. RESULTS MAY VARY. ALWAYS VERIFY CRITICAL INFORMATION WITH A QUALIFIED HUMAN EXPERT.</text>
+    <rect x="648" y="1058" width="102" height="26" rx="13" fill="#1A1040" stroke="#C084FC" stroke-width="0.75" stroke-opacity="0.5"/>
+    <text x="699" y="1076" text-anchor="middle" font-family="'Share Tech Mono','Courier New',monospace" font-size="9" fill="#C084FC" letter-spacing="2">v1.0 // 2003</text>
+    <rect y="1105" width="794" height="18" fill="url(#checker)" opacity="0.65"/>
+
+    <!-- SIDE DECORATIONS -->
+    <line x1="26" y1="88" x2="26" y2="632" stroke="#C084FC" stroke-width="0.75" opacity="0.22"/>
+    <line x1="28" y1="88" x2="28" y2="632" stroke="#22D3EE" stroke-width="0.4"  opacity="0.14"/>
+    <line x1="768" y1="88" x2="768" y2="632" stroke="#22D3EE" stroke-width="0.75" opacity="0.22"/>
+    <line x1="766" y1="88" x2="766" y2="632" stroke="#C084FC" stroke-width="0.4"  opacity="0.14"/>
+    <text transform="translate(15,430) rotate(-90)" text-anchor="middle" font-family="'Share Tech Mono','Courier New',monospace" font-size="7.5" fill="#C084FC" fill-opacity="0.38" letter-spacing="3">CLAUDE // ANTHROPIC // AI SYSTEM // 2003</text>
+    <text transform="translate(785,405) rotate(90)" text-anchor="middle" font-family="'Share Tech Mono','Courier New',monospace" font-size="7.5" fill="#22D3EE" fill-opacity="0.38" letter-spacing="3">INTELLIGENT // SAFE // POWERFUL // CREATIVE</text>
+    <circle cx="64"  cy="272" r="3"   fill="#C084FC" opacity="0.42"/>
+    <circle cx="72"  cy="286" r="1.5" fill="#22D3EE" opacity="0.42"/>
+    <circle cx="57"  cy="290" r="2"   fill="#F472B6" opacity="0.32"/>
+    <circle cx="730" cy="272" r="3"   fill="#22D3EE" opacity="0.42"/>
+    <circle cx="738" cy="286" r="1.5" fill="#C084FC" opacity="0.42"/>
+    <circle cx="723" cy="290" r="2"   fill="#A3E635" opacity="0.32"/>
+
+  </g>
+</svg>
